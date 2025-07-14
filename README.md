@@ -15,8 +15,10 @@ A simple Flask web application to generate QR codes from your text input and dow
 
 
 ## Demo
+[![Deployed Website Screenshot](static/deployed.png)](https://text2qr.onrender.com/)
 
-![Deployed Website Screenshot](static/deployed.png)
+> **Try it instantly:**  
+> 👉 [https://text2qr.onrender.com/](https://text2qr.onrender.com/)
 
 ---
 
