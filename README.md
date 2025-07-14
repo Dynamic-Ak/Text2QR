@@ -13,10 +13,10 @@ A simple Flask web application to generate QR codes from your text input and dow
 
 ---
 
+
 ## Demo
 
-<!-- Optionally, add a screenshot here -->
-<!-- ![App Screenshot](static/screenshot.png) -->
+![Deployed Website Screenshot](static/deployed.png)
 
 ---
 
@@ -86,6 +86,8 @@ qr-code-generator/
 - [Pillow](https://python-pillow.org/)
 
 ---
+
+
 
 ## Credits
 
