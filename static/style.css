@@ -1,0 +1,108 @@
+body {
+  background: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  margin-top: 40px;
+  color: #333;
+  letter-spacing: 1px;
+}
+form {
+  margin-top: 30px;
+  background: #f8f8ff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(100, 50, 200, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+textarea {
+  padding: 12px 16px;
+  border: 1.5px solid #a78bfa;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 24px;
+  outline: none;
+  transition: border 0.2s;
+  width: 320px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+textarea:focus {
+  border-color: #7c3aed;
+}
+button {
+  background-color: #7c3aed;
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.12);
+  margin-bottom: 0;
+  width: auto;
+}
+button:hover, button:focus {
+  background-color: #5b21b6;
+}
+.error {
+  color: #e11d48;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.qr-section {
+  margin-top: 24px;
+  text-align: center;
+}
+img {
+  margin-top: 12px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  padding: 8px;
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+}
+.footer {
+  margin-top: 40px;
+  padding: 18px 0;
+  width: 100%;
+  text-align: center;
+  color: #7c3aed;
+  font-size: 1rem;
+  background: #f8f8ff;
+  letter-spacing: 0.5px;
+  border-top: 1px solid #ececec;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 480px) {
+  form {
+    padding: 20px 20px;
+    max-width: 90%;
+  }
+  textarea {
+    width: 100%;
+    font-size: 1rem;
+  }
+  button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1.1rem;
+  }
+  img {
+    max-width: 100%;
+  }
+}

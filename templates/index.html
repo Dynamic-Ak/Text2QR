@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>QR Code Generator</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='icon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>QR Code Generator</h1>
+    <form method="post" autocomplete="off">
+      <textarea name="data" rows="6" cols="40" placeholder="Enter your text here..." required></textarea>
+      <button type="submit">Generate QR</button>
+    </form>
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% endif %}
+    {% if qr_generated %}
+      <div class="qr-section">
+        <h2>Your QR Code:</h2>
+        <img src="{{ url_for('static', filename='qr_code.png') }}" alt="QR Code">
+      </div>
+    {% endif %}
+    <footer class="footer">
+  created by dynamic ak with 🤍
+</footer>
+  </body>
+</html>
